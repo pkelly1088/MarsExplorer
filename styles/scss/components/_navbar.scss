@@ -1,0 +1,120 @@
+@import "./../abstracts/functions";
+@import "./../abstracts/variables";
+
+header {
+  background-color: color("primary");
+  color: color("secondary");
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  img {
+    height: 50px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav-link {
+    color: color("secondary");
+    margin-left: 5rem;
+    padding-bottom: 1px;
+
+    &:hover,
+    :focus {
+      color: color("accent");
+    }
+  }
+
+  .active {
+    color: color("accent");
+    border-bottom: 3px solid color("accent");
+  }
+
+  .nav-logo {
+    margin-left: 5rem;
+    color: color("secondary");
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  .get-code {
+    margin-right: 5rem;
+  }
+
+  .button {
+    padding: 1rem 2rem;
+    color: color("secondary");
+    background-color: color("accent");
+    border-radius: 4px;
+
+    &:hover,
+    :focus {
+      background-color: darken(color("accent"), 10%);
+    }
+  }
+
+  .hamburger {
+    margin-right: 5rem;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    div .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background-color: color("accent");
+    }
+
+    .nav-link,
+    .get-code {
+      display: none;
+    }
+
+    a.responsive {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      padding-right: 0;
+      padding-left: 0;
+
+      &:hover,
+      :focus {
+        padding-bottom: 3px;
+      }
+    }
+
+    a.responsive.nav-link {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hamburger.responsive .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.responsive .bar:nth-child(1) {
+      transform: translateY(13px) rotate(45deg);
+    }
+
+    .hamburger.responsive .bar:nth-child(3) {
+      transform: translateY(-13px) rotate(-45deg);
+    }
+  }
+}

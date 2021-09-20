@@ -1,0 +1,154 @@
+@import "./../abstracts/functions";
+@import "./../abstracts/variables";
+
+// *{
+//   border: 1px dashed red;
+// }
+
+//Styling for whole page
+body {
+  background-color: color("secondary");
+}
+
+main {
+  width: 100%;
+  padding-right: $padding;
+  padding-left: $padding;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: $desktop) {
+  main {
+    max-width: 1120px;
+  }
+}
+
+//styling for search section
+h1 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  margin-bottom: 5rem;
+
+  h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .rover-select,
+  .date-select {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    .rover-select,
+    .date-select {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+  }
+
+  .instructions {
+    font-weight: 400;
+  }
+
+  .submit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .inform {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    color: color("alt-accent");
+  }
+}
+
+//Styling for image gallery
+.rover-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .error {
+    color: color("alt-accent");
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+
+  .card {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .card-container {
+    background-color: color("white");
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .image-text {
+    padding: 2rem;
+  }
+
+  h3 {
+    font-weight: 600;
+    margin-bottom: 0rem;
+  }
+
+  h4 {
+    margin-top: 0rem;
+  }
+
+  img {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .likeBtn {
+    margin-top: 1rem;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    .card {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: $desktop) {
+    .card {
+      flex: 0 0 auto;
+      width: 33%;
+    }
+  }
+}

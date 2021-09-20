@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/css/home.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>Mars Explorer Application</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="topnav">
+            <div class="link-group">
+                <a href="#" class="nav-logo"><span class="alt-accent">Mars</span> Explorer</a>
+                <a href="#" class="active nav-link">Home</a>
+                <a href="#" class="nav-link">Liked Photos</a>
+            </div>
+            <a href="https://github.com/pkelly1088/MarsExplorer.git" target="_blank" class="get-code button">See Code</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="search">
+            <h1><span class="alt-accent">Mars</span> Explorer</h1>
+            <h2>Rover Search</h2>
+            <p>Select a Rover and a Date to see photos from Mars</p>
+            <form>
+                <div class="rover-select">
+                    <label for="rovers">Rover <span class="instructions">(Select One)</span></label>
+                    <select id="rovers" name="rovers">
+                        <option value="curiosity">Curiosity</option>
+                        <option value="opportunity">Opportunity</option>
+                        <option value="spirit">Spirit</option>
+                    </select>
+                </div>
+                <div class="date-select">
+                    <label for="myDate">Date <span class="instructions date-label">(Select a Date)</span></label>
+                    <input type="date" name="selectDate" id="selectDate">
+                </div>
+                <div class="submit">
+                    <button class="search-button">See Photos!</button>
+                </div>
+            </form>
+        </section>
+        <section class="rover-images">
+        </section>
+    </main>
+    <footer>
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/imageSearch.js"></script>
+</body>
+</html>

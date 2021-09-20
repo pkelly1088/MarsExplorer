@@ -1,0 +1,7 @@
+@import "./../abstracts/variables";
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+} ;
