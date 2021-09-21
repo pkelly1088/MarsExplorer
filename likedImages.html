@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/css/liked.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>Mars Explorer: Liked Images</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="topnav">
+            <div class="link-group">
+                <a href="./index.html" class="nav-logo"><span class="alt-accent">Mars</span> Explorer</a>
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="#" class="active nav-link">Liked Photos</a>
+            </div>
+            <a href="https://github.com/pkelly1088/MarsExplorer.git" target="_blank" class="get-code button" aria-describedby="go_to_code_location">See Code</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="image-display">
+            <h2>Liked Images</h2>
+            <p>Your favorite Images from Mars</p>
+        </section>
+        <section class="images-liked" aria-describedby="image_card_display">
+        </section>
+    </main>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/likedImages.js"></script>
+</body>
+</html>

@@ -24,6 +24,7 @@ nav {
     color: color("secondary");
     margin-left: 5rem;
     padding-bottom: 1px;
+    transition: ease-in-out 0.3s;
 
     &:hover,
     :focus {
@@ -47,18 +48,6 @@ nav {
     margin-right: 5rem;
   }
 
-  .button {
-    padding: 1rem 2rem;
-    color: color("secondary");
-    background-color: color("accent");
-    border-radius: 4px;
-
-    &:hover,
-    :focus {
-      background-color: darken(color("accent"), 10%);
-    }
-  }
-
   .hamburger {
     margin-right: 5rem;
     display: none;
@@ -76,9 +65,17 @@ nav {
       background-color: color("accent");
     }
 
+    .link-group {
+      width: 100%;
+    }
+
     .nav-link,
     .get-code {
       display: none;
+    }
+
+    .active {
+      border-bottom: 0px;
     }
 
     a.responsive {
@@ -88,11 +85,7 @@ nav {
       margin-bottom: 3rem;
       padding-right: 0;
       padding-left: 0;
-
-      &:hover,
-      :focus {
-        padding-bottom: 3px;
-      }
+      width: 100%;
     }
 
     a.responsive.nav-link {

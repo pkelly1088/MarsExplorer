@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-    <title>Mars Explorer Application</title>
+    <title>Mars Explorer Application: Home Page</title>
 </head>
 <body>
     <header class="header">
@@ -16,9 +16,9 @@
             <div class="link-group">
                 <a href="#" class="nav-logo"><span class="alt-accent">Mars</span> Explorer</a>
                 <a href="#" class="active nav-link">Home</a>
-                <a href="#" class="nav-link">Liked Photos</a>
+                <a href="./likedImages.html" class="nav-link">Liked Photos</a>
             </div>
-            <a href="https://github.com/pkelly1088/MarsExplorer.git" target="_blank" class="get-code button">See Code</a>
+            <a href="https://github.com/pkelly1088/MarsExplorer.git" target="_blank" class="get-code button" aria-describedby="go_to_code_location">See Code</a>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -27,11 +27,11 @@
         </nav>
     </header>
     <main>
-        <section class="search">
+        <section class="search" aria-describedby="image_search_form_section">
             <h1><span class="alt-accent">Mars</span> Explorer</h1>
             <h2>Rover Search</h2>
             <p>Select a Rover and a Date to see photos from Mars</p>
-            <form>
+            <form aria-describedby="image_search">
                 <div class="rover-select">
                     <label for="rovers">Rover <span class="instructions">(Select One)</span></label>
                     <select id="rovers" name="rovers">
@@ -41,7 +41,7 @@
                     </select>
                 </div>
                 <div class="date-select">
-                    <label for="myDate">Date <span class="instructions date-label">(Select a Date)</span></label>
+                    <label for="selectDate">Date <span class="instructions date-label">(Select a Date)</span></label>
                     <input type="date" name="selectDate" id="selectDate">
                 </div>
                 <div class="submit">
@@ -49,12 +49,9 @@
                 </div>
             </form>
         </section>
-        <section class="rover-images">
+        <section class="rover-images" aria-describedby="image_card_display">
         </section>
     </main>
-    <footer>
-        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    </footer>
 <script src="./scripts/navbar.js"></script>
 <script src="./scripts/imageSearch.js"></script>
 </body>

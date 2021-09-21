@@ -612,79 +612,31 @@ h1 {
   justify-content: center;
 }
 
-.search {
+.image-display {
   margin-bottom: 5rem;
 }
 
-.search h2 {
-  margin-top: 1rem;
+.image-display h2 {
+  margin-top: 5rem;
   margin-bottom: 0.5rem;
   font-weight: 400;
   display: flex;
   justify-content: center;
 }
 
-.search p {
+.image-display p {
   margin-bottom: 2.5rem;
   display: flex;
   justify-content: center;
 }
 
-.search form {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.search .rover-select,
-.search .date-select {
-  flex: 0 0 auto;
-  width: 100%;
-  padding: 1rem;
-}
-
-@media only screen and (min-width: 1024px) {
-  .search .rover-select,
-  .search .date-select {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-}
-
-.search .instructions {
-  font-weight: 400;
-}
-
-.search .submit {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.search .inform {
-  margin-left: 1rem;
-  font-size: 1.3rem;
-  color: #c92732;
-}
-
-.rover-images {
+.images-liked {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.rover-images .error {
-  color: #c92732;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  font-size: 1.9rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  margin-top: -4.6rem;
-}
-
-.rover-images .card {
+.images-liked .card {
   display: flex;
   flex: 0 0 auto;
   width: 100%;
@@ -692,53 +644,53 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  .rover-images .card {
+  .images-liked .card {
     flex: 0 0 auto;
     width: 50%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .rover-images .card {
+  .images-liked .card {
     flex: 0 0 auto;
     width: 33%;
   }
 }
 
-.rover-images .card-container {
+.images-liked .card-container {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.rover-images .image-text {
+.images-liked .image-text {
   padding: 2rem;
 }
 
-.rover-images h3 {
+.images-liked h3 {
   font-weight: 600;
   margin-bottom: 0rem;
 }
 
-.rover-images h4 {
+.images-liked h4 {
   margin-top: 0rem;
 }
 
-.rover-images img {
+.images-liked img {
   max-width: 100%;
   min-width: 100%;
 }
 
-.rover-images .likeBtn {
+.images-liked .likeBtn {
   margin-top: 1rem;
 }
 
-.rover-images .liked {
+.images-liked .liked {
   background-color: #c92732;
 }
 
-.rover-images .liked:hover,
-.rover-images .liked :focus {
+.images-liked .liked:hover,
+.images-liked .liked :focus {
   background-color: #9e1f27;
 }

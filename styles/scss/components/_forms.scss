@@ -17,7 +17,7 @@ select {
   width: 100%;
 
   &:focus {
-    border: 1px solid color("accent");
+    border: 2px solid color("accent");
     outline: 0;
   }
 }
